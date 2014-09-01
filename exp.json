@@ -1,0 +1,25 @@
+/*
+    exp.json - Configuration for exp-esp
+
+    Transform by prefixing and minifying.
+ */
+{
+    control: {
+        transforms: {
+            name:   'compile-esp',
+            from:   'esp',
+            to:     'css',
+            script: `
+                function transform(contents, meta, service) {
+                    let esp = Cmd.locate('esp')
+                    if (esp) {
+                        contents = runFile(esp + ' compile', contents, meta)
+                    } else {
+                        trace('Warn', 'Cannot find esp')
+                    }
+                    return contents
+                }
+            `
+        }
+    }
+}

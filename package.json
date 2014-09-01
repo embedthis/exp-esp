@@ -1,0 +1,10 @@
+{
+    "name": "exp-esp",
+    "description": "ESP Plugin for Expansive",
+    "version": "0.1.0",
+    "keywords": [
+        "expansive-plugin",
+        "esp"
+    ],
+    "licenses": "GPL",
+}
