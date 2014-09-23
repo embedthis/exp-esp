@@ -3,8 +3,8 @@
 
     Transform by prefixing and minifying.
  */
-{
-    control: {
+Expansive.load({
+    expansive: {
         transforms: {
             name:   'compile-esp',
             from:   'esp',
@@ -22,4 +22,4 @@
             `
         }
     }
-}
+})
