@@ -7,8 +7,8 @@ Expansive.load({
     expansive: {
         transforms: {
             name:   'compile-esp',
-            from:   'esp',
-            to:     'css',
+            input:  'esp',
+            output: 'css',
             script: `
                 function transform(contents, meta, service) {
                     let esp = Cmd.locate('esp')

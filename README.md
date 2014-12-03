@@ -7,7 +7,7 @@ Provides the 'compile-esp' service.
 
 ### To install:
 
-exp install exp-esp
+exp install esp
 
 ### Get Pak from
 
