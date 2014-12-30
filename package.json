@@ -2,9 +2,11 @@
     "name": "exp-esp",
     "description": "ESP Plugin for Expansive",
     "version": "0.1.0",
+    "pak": ">=0.10",
     "keywords": [
         "expansive-plugin",
         "esp"
     ],
     "licenses": "GPL",
+    "install": false
 }
