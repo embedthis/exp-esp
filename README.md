@@ -1,14 +1,28 @@
 exp-esp
 ===
 
-Expansive plugin for the ESP files
+Expansive plugin for ESP files.
 
 Provides the 'compile-esp' service.
 
 ### To install:
 
-exp install esp
+    pak install exp-esp
+
+### To configure in expansive.json:
+
+* compile-esp.enable -- Set to true to enable the compilation of ESP files.
+
+```
+{
+    services: {
+        'compile-esp': {
+            enable: true
+        }
+    }
+}
+```
 
 ### Get Pak from
 
-[https://github.com/embedthis/pak](https://github.com/embedthis/pak)
+[https://embedthis.com/pak/](https://embedthis.com/pak/download.html)
