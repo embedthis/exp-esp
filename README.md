@@ -11,7 +11,7 @@ Provides the 'compile-esp' service.
 
 ### To configure in expansive.json:
 
-* compile-esp.enable -- Set to true to enable the compilation of ESP files.
+* compile-esp.enable &mdash; Set to true to enable the compilation of ESP files.
 
 ```
 {
