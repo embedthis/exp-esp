@@ -12,12 +12,16 @@ Provides the 'compile-esp' service.
 ### To configure in expansive.json:
 
 * compile-esp.enable &mdash; Set to true to enable the compilation of ESP files.
+* serve.command &mdash; ESP command line to invoke esp.
 
 ```
 {
     services: {
         'compile-esp': {
             enable: true
+        }
+        serve: {
+            command: 'esp --log stdout:4 --trace stdout:4',
         }
     }
 }
