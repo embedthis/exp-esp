@@ -15,11 +15,11 @@ Expansive.load({
                     return
                 }
                 if (expansive.filters || service.files) {
-                    let files = expansive.directories.documents.files(service.files || '**.esp')
+                    let files = expansive.directories.dist.files(service.files || '**.esp')
                     for each (path in files) {
                         let match = false
                         for each (filter in expansive.filters) {
-                            filter = expansive.directories.documents.join(Path(filter).trimComponents(1))
+                            filter = expansive.directories.dist.join(Path(filter).trimComponents(1))
                             if (filter.startsWith(path) || path.startsWith(filter)) {
                                 match = true
                                 break

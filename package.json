@@ -2,11 +2,17 @@
     "name": "exp-esp",
     "description": "ESP Plugin for Expansive",
     "version": "0.1.0",
-    "pak": ">=0.10",
     "keywords": [
         "expansive-plugin",
         "esp"
     ],
     "licenses": "GPL",
-    "install": false
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/embedthis/exp-esp.git"
+    },
+    "pak": {
+        "install": false,
+        "version": ">=0.10"
+    }
 }
