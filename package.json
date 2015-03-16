@@ -12,7 +12,6 @@
         "url": "git://github.com/embedthis/exp-esp.git"
     },
     "pak": {
-        "install": false,
         "version": ">=0.10"
     }
 }
