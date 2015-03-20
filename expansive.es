@@ -34,8 +34,13 @@ Expansive.load({
                 }
             }
         `
+
     }, {
-        name:       'serve',
-        command:    'esp --trace stdout:4',
+        name:     'serve-esp',
+        command:  'esp --trace stdout:4',
+        script: `
+            let service = expansive.services['serve-esp']
+            expansive.control.server ||= service.command
+        `
     }]
 })
