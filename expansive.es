@@ -6,13 +6,14 @@
 Expansive.load({
     transforms: [{
         name:    'compile-esp',
-        clean:   'esp clean'
-        command: 'esp compile'
+        clean:   'esp clean',
+        command: 'esp compile',
+        esp:     Cmd.locate('esp'),
         files:   null,
         remove:  false,
         script: `
             function post(meta, service) {
-                let esp = Cmd.locate('esp')
+                let esp = service.esp
                 if (!esp) {
                     trace('Warn', 'Cannot find esp')
                     return
@@ -37,10 +38,9 @@ Expansive.load({
                         }
                     }
                 } else {
-                    vtrace('Clean', service.clean)
+                    trace('Clean', service.clean)
                     run(service.clean)
                     trace('Compile', service.command)
-                    run(service.clean)
                     run(service.command)
                     for each (path in expansive.directories.dist.files('**.esp')) {
                         if (service.remove) {
