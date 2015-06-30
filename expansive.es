@@ -46,6 +46,7 @@ Expansive.load({
                         for each (path in expansive.directories.dist.files('**.esp')) {
                             if (service.remove) {
                                 path.remove()
+                                path.dirname.remove()
                             }
                         }
                     }
