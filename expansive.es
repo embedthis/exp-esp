@@ -62,6 +62,11 @@ Expansive.load({
         command:  'esp --trace stdout:4',
         script: `
             let service = expansive.services['serve-esp']
+            if (!Path('esp.json').exists) {
+                if (service.command == 'esp --trace stdout:4') {
+                    service.command += ' ' + (expansive.control.listen || '127.0.0.1:5000')
+                }
+            }
             expansive.control.server ||= service.command
         `
     }]
