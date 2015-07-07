@@ -1,7 +1,7 @@
 {
     "name": "exp-esp",
     "description": "ESP Plugin for Expansive",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "keywords": [
         "expansive-plugin",
         "esp"
