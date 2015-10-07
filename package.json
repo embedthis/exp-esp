@@ -10,5 +10,8 @@
     "repository": {
         "type": "git",
         "url": "git://github.com/embedthis/exp-esp.git"
+    },
+    "devDependencies": {
+        "expansive": ">=0.6.0"
     }
 }
