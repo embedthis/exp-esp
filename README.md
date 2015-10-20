@@ -17,6 +17,7 @@ Provides the 'esp' service.
 * esp &mdash; Set to the path to the esp command. Appweb users may need to set this to 'appesp'.
 * keep &mdash; Keep the dist/\**.esp files after compilation. Note: this means you cannot do stand-alone 
     'esp compile' as the files will not be present to compile. You must do 'expansive render'. Defaults to true.
+* mappings &mdash; File extensions to process. Defaults to: [ 'esp' ].
 * serve &mdash; ESP command line to invoke esp to serve client browser requests. Defaults to 'esp --trace stdout:4 LISTEN'
     where LISTEN is replaced with the listen port configured in the esp.json or expansive.json files.
 
